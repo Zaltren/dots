@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <title>Dots</title>
+    <link rel="stylesheet" href="Styles/style.css"> 
+
+    <div class="spinner">
+    <div class="bounce1"></div>
+
+
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+    </div>
+</head>
+
+<body>
+   
+    
+</body>
+
+</html>
+
+
+.spinner {
+    margin:100px auto 0;
+    width:50px; /*the direction of the dots */
+    text-align: center;
+}
+
+body {
+    background-color: #333;
+}
+
+.spinner>div{
+    width:18px;
+    height: 18px;
+    background-color: rgb(161, 17, 151);
+    border-radius: 100%;
+    display: inline-block;
+    animation: sk-bouncedelay 2s infinite
+    ease-in-out both;
+}
+
+.spinner.bounce1 {
+    animation-delay: -0.29s;
+}
+
+.spinner.bounce2 {
+    animation-delay: -0.16s;
+}
+
+.spinner.bounce3 {
+    animation-delay: -0.15s;
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100%{ 
+
+transform: scale(0);
+    } 40% {
+        
+transform: scale(1.0);
+    }}
